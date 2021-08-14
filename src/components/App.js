@@ -2,10 +2,13 @@ import React, {Component} from "react";
 import '../styles/App.css';
 
 class App extends Component {
-  
-	state = { show : false }
-	
-  updateState = () => { 
+    constructor(props) {
+		super(props);
+	    this.state = { show : false };
+      //this.updateState = this.updateState.bind(this) 
+      
+	};
+  updateState = ()=> { 
       
     this.setState({show: !(this.state.show)}) 
   } 
