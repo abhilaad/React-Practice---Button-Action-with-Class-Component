@@ -8,7 +8,7 @@ class App extends Component {
       //this.updateState = this.updateState.bind(this) 
       
 	};
-  updateState = ()=> { 
+  updateState() { 
       
     this.setState({show: !(this.state.show)}) 
   } 
@@ -19,7 +19,7 @@ class App extends Component {
 			<button
         id="click"
         onClick={
-          this.updateState
+          this.updateState.bind(this)
         }
       >
         Toggle P
@@ -37,4 +37,5 @@ class App extends Component {
 
 
 export default App;
+
 
