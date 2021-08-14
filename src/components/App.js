@@ -3,7 +3,7 @@ import '../styles/App.css';
 
 class App extends Component {
   
-	state = { show : false };
+	state = { show : false }
 	
   updateState = () => { 
       
